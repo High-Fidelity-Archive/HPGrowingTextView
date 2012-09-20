@@ -66,12 +66,13 @@
 	NSString *text;
 	UIFont *font;
 	UIColor *textColor;
-	UITextAlignment textAlignment; 
+	UIColor *backgroundColor;
+	UITextAlignment textAlignment;
 	NSRange selectedRange;
 	BOOL editable;
 	UIDataDetectorTypes dataDetectorTypes;
 	UIReturnKeyType returnKeyType;
-    UIKeyboardAppearance keyboardAppearance;
+	UIKeyboardAppearance keyboardAppearance;
     
     UIEdgeInsets contentInset;
 }
@@ -88,6 +89,7 @@
 @property(nonatomic,assign) NSString *text;
 @property(nonatomic,assign) UIFont *font;
 @property(nonatomic,assign) UIColor *textColor;
+@property(nonatomic,assign) UIColor *backgroundColor;
 @property(nonatomic) UITextAlignment textAlignment;    // default is UITextAlignmentLeft
 @property(nonatomic) NSRange selectedRange;            // only ranges of length 0 are supported
 @property(nonatomic,getter=isEditable) BOOL editable;

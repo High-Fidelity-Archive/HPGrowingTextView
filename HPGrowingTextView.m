@@ -40,6 +40,7 @@
 
 @synthesize font;
 @synthesize textColor;
+@synthesize backgroundColor;
 @synthesize textAlignment; 
 @synthesize selectedRange;
 @synthesize editable;
@@ -364,6 +365,18 @@
 
 -(UIColor*)textColor{
 	return internalTextView.textColor;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+-(void)setBackgroundColor:(UIColor *)backgroundColor
+{
+	internalTextView.backgroundColor = backgroundColor;
+}
+
+-(UIColor*)backgroundColor
+{
+    return internalTextView.backgroundColor;
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
