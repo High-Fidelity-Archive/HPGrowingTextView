@@ -71,6 +71,7 @@
 	BOOL editable;
 	UIDataDetectorTypes dataDetectorTypes;
 	UIReturnKeyType returnKeyType;
+    UIKeyboardAppearance keyboardAppearance;
     
     UIEdgeInsets contentInset;
 }
