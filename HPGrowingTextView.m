@@ -46,6 +46,7 @@
 @synthesize dataDetectorTypes; 
 @synthesize animateHeightChange;
 @synthesize returnKeyType;
+@synthesize keyboardAppearance;
 
 // having initwithcoder allows us to use HPGrowingTextView in a Nib. -- aob, 9/2011
 - (id)initWithCoder:(NSCoder *)aDecoder
@@ -411,6 +412,18 @@
 -(UIReturnKeyType)returnKeyType
 {
 	return internalTextView.returnKeyType;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+-(void)setKeyboardAppearance:(UIKeyboardAppearance)keyAppearance
+{
+	internalTextView.keyboardAppearance = keyAppearance;
+}
+
+-(UIKeyboardAppearance)keyboardAppearance
+{
+	return internalTextView.keyboardAppearance;
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
