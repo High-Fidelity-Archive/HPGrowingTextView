@@ -369,9 +369,9 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
--(void)setBackgroundColor:(UIColor *)backgroundColor
+-(void)setBackgroundColor:(UIColor *)color
 {
-	internalTextView.backgroundColor = backgroundColor;
+	internalTextView.backgroundColor = color;
 }
 
 -(UIColor*)backgroundColor
