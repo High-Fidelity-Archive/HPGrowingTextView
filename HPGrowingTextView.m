@@ -512,6 +512,10 @@
 	
 	//weird 1 pixel bug when clicking backspace when textView is empty
 	if(![textView hasText] && [atext isEqualToString:@""]) return NO;
+    
+    // sometimes we want the delegate to handle this directly
+    if ([delegate respondsToSelector:@selector(growingTextView:shouldChangeTextInRange:replacementText:)])
+        return [delegate growingTextView:self shouldChangeTextInRange:range replacementText:atext];
 	
 	if ([atext isEqualToString:@"\n"]) {
 		if ([delegate respondsToSelector:@selector(growingTextViewShouldReturn:)]) {
