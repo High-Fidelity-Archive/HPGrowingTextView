@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name     = 'HPGrowingTextView'
   s.version  = '0.0.2'
   s.platform = :ios
-  s.license  = 'MIT'
+  s.license  = 'Unknown'
   s.summary  = "Coffee and Power's modified fork of yatinsns' HPGrowingTextView."
   s.homepage = 'https://github.com/worklist/HPGrowingTextView'
   s.author   = { 'Coffee and Power' => 'contact@worklist.net' }
